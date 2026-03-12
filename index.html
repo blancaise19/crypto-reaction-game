@@ -2,11 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+
+  <!-- Play.fun ownership verification -->
+  <meta name="x-ogp-key" content="fcc119b5-998c-4ca4-8b06-51b864006469" id="ogp-key-meta" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Crypto Reaction Rush</title>
   <meta name="description" content="Tap glowing crypto coins before they disappear in this fast browser reaction game.">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <main class="app">
     <section class="hud-panel">
@@ -39,24 +44,31 @@
         <button id="restartButton" class="action-button secondary" type="button">Restart</button>
       </div>
 
-      <p id="message" class="message" role="status">Hit start, then tap the coin as fast as you can for 30 seconds.</p>
+      <p id="message" class="message" role="status">
+        Hit start, then tap the coin as fast as you can for 30 seconds.
+      </p>
     </section>
 
     <section class="arena-panel">
       <div id="arena" class="arena" aria-label="Game arena">
         <div class="scanlines" aria-hidden="true"></div>
+
         <button id="coin" class="coin hidden" type="button" aria-label="Tap coin">
           <span class="coin-core">BTC</span>
           <span class="coin-ring coin-ring-a"></span>
           <span class="coin-ring coin-ring-b"></span>
         </button>
+
         <div id="overlay" class="overlay">
           <div class="overlay-card">
             <p class="overlay-label">Reaction run</p>
             <h2 id="overlayTitle">Warm up your reflexes</h2>
-            <p id="overlayText">Tap glowing coins before they vanish. Every few seconds the game speeds up.</p>
+            <p id="overlayText">
+              Tap glowing coins before they vanish. Every few seconds the game speeds up.
+            </p>
           </div>
         </div>
+
       </div>
     </section>
   </main>
